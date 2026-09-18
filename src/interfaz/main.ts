@@ -251,7 +251,7 @@ function pantallaSorteo(ver?: number): void {
           </div>
           <div class="regla">
             <div class="regla-tit">Excluye</div>
-            <div class="regla-val">${premio.excluyeCertificacion ? esc(premio.excluyeCertificacion) : 'No aplica'}</div>
+            <div class="regla-val">${premio.excluyeCertificaciones?.length ? esc(premio.excluyeCertificaciones.join(', ')) : 'No aplica'}</div>
           </div>
           <div class="regla" style="background:var(--acento-fondo);border-color:var(--acento)">
             <div class="regla-tit" style="color:var(--acento)">Elegibles</div>

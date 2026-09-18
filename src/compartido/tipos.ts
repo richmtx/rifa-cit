@@ -21,8 +21,8 @@ export interface Premio {
     suplentes: number;
     carreras: ClaveCarrera[] | 'TODAS';
     semestreMin: number;
-    /** Nombre exacto en la base de certificados previos. */
-    excluyeCertificacion?: string;
+    /** Nombres de certificaciones que sacan al alumno de esta rifa. */
+    excluyeCertificaciones?: string[];
 }
 
 export interface DatosRifa {

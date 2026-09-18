@@ -10,10 +10,10 @@ const ABIERTO = [
 const MODELADO = ['IND', 'MEC', 'MECA', 'ARQ', 'SIS'] as const;
 
 export const PREMIOS: Premio[] = [
-    { id: 1, nombre: 'Certificación ECO-680', tipo: 'certificacion', cantidad: 3, suplentes: 5, carreras: ['IND'], semestreMin: 7 },
-    { id: 2, nombre: 'Beca 100% programa completo Sigma', tipo: 'certificacion', cantidad: 10, suplentes: 5, carreras: ['IND'], semestreMin: 5 },
-    { id: 3, nombre: 'Certificación SolidWorks Básico', tipo: 'certificacion', cantidad: 5, suplentes: 5, carreras: ['IND', 'MEC', 'MECA'], semestreMin: 7 },
-    { id: 4, nombre: 'Certificación SolidWorks Profesional', tipo: 'certificacion', cantidad: 5, suplentes: 5, carreras: ['IND', 'MEC', 'MECA'], semestreMin: 7 },
+    { id: 1, nombre: 'Certificación ECO-680', tipo: 'certificacion', cantidad: 3, suplentes: 5, carreras: ['IND'], semestreMin: 7, excluyeCertificaciones: ['ECO-680'] },
+    { id: 2, nombre: 'Beca 100% programa completo Sigma', tipo: 'certificacion', cantidad: 10, suplentes: 5, carreras: ['IND'], semestreMin: 5, excluyeCertificaciones: ['Green Belt', 'Yellow Belt'] },
+    { id: 3, nombre: 'Certificación SolidWorks Básico', tipo: 'certificacion', cantidad: 5, suplentes: 5, carreras: ['IND', 'MEC', 'MECA'], semestreMin: 7, excluyeCertificaciones: ['SolidWorks Básico'] },
+    { id: 4, nombre: 'Certificación SolidWorks Profesional', tipo: 'certificacion', cantidad: 5, suplentes: 5, carreras: ['IND', 'MEC', 'MECA'], semestreMin: 7, excluyeCertificaciones: ['SolidWorks Profesional'] },
     { id: 5, nombre: 'Certificación Kaizen Manager', tipo: 'certificacion', cantidad: 10, suplentes: 5, carreras: ['IND'], semestreMin: 5 },
     { id: 6, nombre: 'Capacitación IA Fundamentos', tipo: 'capacitacion', cantidad: 10, suplentes: 5, carreras: ['INF', 'TICS', 'SIS'], semestreMin: 6 },
     { id: 7, nombre: 'Capacitación Ciberseguridad', tipo: 'capacitacion', cantidad: 10, suplentes: 5, carreras: ['INF', 'TICS', 'SIS'], semestreMin: 6 },

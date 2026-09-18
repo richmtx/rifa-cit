@@ -26,9 +26,9 @@ export function elegiblesPara(
         if (yaGanaron.has(e.control)) return false;
         if (e.semestre < premio.semestreMin) return false;
         if (premio.carreras !== 'TODAS' && !premio.carreras.includes(e.carrera)) return false;
-        if (premio.excluyeCertificacion) {
+        if (premio.excluyeCertificaciones?.length) {
             const suyas = certificadosPrevios[e.control] ?? [];
-            if (suyas.includes(premio.excluyeCertificacion)) return false;
+            if (premio.excluyeCertificaciones.some((c) => suyas.includes(c))) return false;
         }
         return true;
     });
