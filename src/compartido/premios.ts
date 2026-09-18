@@ -9,6 +9,9 @@ const ABIERTO = [
 /** Carreras de los premios de modelado. */
 const MODELADO = ['IND', 'MEC', 'MECA', 'ARQ', 'SIS'] as const;
 
+/** Carreras de la impresora 3D (sin Sistemas). */
+const MODELADO_3D = ['IND', 'MEC', 'MECA', 'ARQ'] as const;
+
 export const PREMIOS: Premio[] = [
     { id: 1, nombre: 'Certificación ECO-680', tipo: 'certificacion', cantidad: 3, suplentes: 5, carreras: ['IND'], semestreMin: 7, excluyeCertificaciones: ['ECO-680'] },
     { id: 2, nombre: 'Beca 100% programa completo Sigma', tipo: 'certificacion', cantidad: 10, suplentes: 5, carreras: ['IND'], semestreMin: 5, excluyeCertificaciones: ['Green Belt', 'Yellow Belt'] },
@@ -36,5 +39,5 @@ export const PREMIOS: Premio[] = [
 
     { id: 23, nombre: 'Mouse inalámbrico para modelado', tipo: 'fisico', cantidad: 1, suplentes: 3, carreras: [...MODELADO], semestreMin: 7 },
     { id: 24, nombre: 'Impresora de papel', tipo: 'fisico', cantidad: 1, suplentes: 3, carreras: [...ABIERTO], semestreMin: 1 },
-    { id: 25, nombre: 'Impresora 3D Creality', tipo: 'fisico', cantidad: 1, suplentes: 3, carreras: [...MODELADO], semestreMin: 7 },
+    { id: 25, nombre: 'Impresora 3D Creality', tipo: 'fisico', cantidad: 1, suplentes: 3, carreras: [...MODELADO_3D], semestreMin: 7 },
 ];
